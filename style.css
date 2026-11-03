@@ -5,7 +5,7 @@ body {
     background-color: #fffdf0;
 }
 
-/* Pintura por zonas con selectores compuestos (Tonos amarillos) */
+/* Selectores compuestos por zonas (Tonos amarillos) */
 header nav ul li a {
     color: #b38600;
 }
@@ -18,7 +18,7 @@ footer ul li a {
     color: #997a00;
 }
 
-/* Conflicto de Cascada vs Especificidad */
+/* Clases puras y refactorización sin identificadores */
 .btn-comprar {
     background-color: #ffe680;
     color: #000;
@@ -27,7 +27,6 @@ footer ul li a {
     display: inline-block;
 }
 
-#btn-destacado {
+.btn-destacado {
     background-color: #ffcc00;
-    color: #000;
 }
