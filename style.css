@@ -1,55 +1,82 @@
+/* Sistema de Diseño Maestro - Identidad Visual */
+:root {
+  --color-primario: #2563eb;
+  --color-secundario: #10b981;
+  --color-fondo: #f8fafc;
+  --color-texto: #1e293b;
+  --color-tarjeta: #ffffff;
+  --fuente-principal: "Inter", sans-serif;
+  --espaciado-pequeno: 8px;
+  --espaciado-medio: 16px;
+  --espaciado-grande: 24px;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    background-color: #2c3e50;
-    background-image: url('dulces/dulces.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px;
+  background-color: var(--color-primario);
+  color: #ffffff;
+  padding: var(--espaciado-medio);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--espaciado-grande);
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 main {
-    background-color: #f8f9fa;
-    padding: 20px;
-}
-
-aside {
-    background-color: #e9ecef;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
+  padding: var(--espaciado-grande);
+  display: flex;
+  gap: var(--espaciado-grande);
+  flex-wrap: wrap;
 }
 
 article {
-    padding: 20px;
-    margin: 15px 0px;
-    border: 1px solid #ced4da;
-    background-color: #ffffff;
+  background-color: var(--color-tarjeta);
+  padding: var(--espaciado-grande);
+  margin-bottom: var(--espaciado-medio);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 300px;
 }
 
 article img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-bottom: 12px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 article h2 {
-    margin-top: 0;
-    margin-bottom: 8px;
+  color: var(--color-primario);
+  margin-top: var(--espaciado-medio);
+  margin-bottom: var(--espaciado-pequeno);
 }
 
 article p {
-    margin-top: 0;
-    margin-bottom: 8px;
+  margin-bottom: var(--espaciado-medio);
 }
 
 .btn-comprar {
-    display: inline-block;
-    margin-top: 5px;
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: #ffffff;
+  padding: var(--espaciado-pequeno) var(--espaciado-medio);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
 }
