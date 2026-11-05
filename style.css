@@ -1,82 +1,169 @@
-/* Sistema de Diseño Maestro - Identidad Visual */
 :root {
-  --color-primario: #2563eb;
-  --color-secundario: #10b981;
-  --color-fondo: #f8fafc;
-  --color-texto: #1e293b;
+  --color-principal: #2563eb;
+  --color-secundario: #e11d48;
+  --color-texto: #1f2937;
   --color-tarjeta: #ffffff;
-  --fuente-principal: "Inter", sans-serif;
-  --espaciado-pequeno: 8px;
-  --espaciado-medio: 16px;
-  --espaciado-grande: 24px;
+  --color-boton: #10b981;
 }
 
 body {
-  font-family: var(--fuente-principal);
-  background-color: var(--color-fondo);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   color: var(--color-texto);
-  margin: 0;
-  padding: 0;
+  background-color: #f8fafc;
 }
 
-header {
-  background-color: var(--color-primario);
-  color: #ffffff;
-  padding: var(--espaciado-medio);
+.header-nav {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("image_2c232b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25px 20px;
 }
 
-header nav ul {
+.header-nav ul {
   list-style: none;
-  display: flex;
-  gap: var(--espaciado-grande);
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-header nav ul li a {
-  color: #ffffff;
+.header-nav a {
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.contenedor-principal {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+aside {
+  width: 180px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside a {
+  display: block;
+  padding: 8px 10px;
+  color: var(--color-texto);
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+aside a::before {
+  content: "• ";
+  color: var(--color-secundario);
+}
+
+aside a:hover {
+  background-color: #f3f4f6;
+  color: var(--color-principal);
+}
+
+aside a:focus {
+  outline: 2px solid var(--color-secundario);
+  outline-offset: 2px;
 }
 
 main {
-  padding: var(--espaciado-grande);
+  flex: 1;
+}
+
+.catalogo {
   display: flex;
-  gap: var(--espaciado-grande);
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 article {
+  position: relative;
   background-color: var(--color-tarjeta);
-  padding: var(--espaciado-grande);
-  margin-bottom: var(--espaciado-medio);
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  width: 300px;
+  padding: 16px;
+  width: 220px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 article img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+article:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-4px);
 }
 
 article h2 {
-  color: var(--color-primario);
-  margin-top: var(--espaciado-medio);
-  margin-bottom: var(--espaciado-pequeno);
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: var(--color-principal);
+}
+
+article h2::after {
+  content: " ¡Oferta!";
+  font-size: 0.75rem;
+  color: var(--color-secundario);
 }
 
 article p {
-  margin-bottom: var(--espaciado-medio);
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0 0 10px 0;
+}
+
+.precio {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111827;
 }
 
 .btn-comprar {
-  display: inline-block;
-  background-color: var(--color-secundario);
-  color: #ffffff;
-  padding: var(--espaciado-pequeno) var(--espaciado-medio);
-  text-decoration: none;
+  background-color: var(--color-boton);
+  color: white;
+  padding: 8px 16px;
+  border: none;
   border-radius: 4px;
-  font-weight: 600;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #059669;
+}
+
+.btn-comprar:active {
+  transform: translateY(2px);
 }
