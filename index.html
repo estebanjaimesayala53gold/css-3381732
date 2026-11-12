@@ -7,81 +7,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header-nav">
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="contenedor-principal">
-        <aside>
+    <div class="app-layout">
+        <header class="header-nav">
+            <img src="imagenes/producto7.jpg" alt="Logo Dulcería Goldship" class="logo-img">
             <nav>
-                <ul>
-                    <li><a href="#">Chocolates</a></li>
-                    <li><a href="#">Caramelos</a></li>
-                    <li><a href="#">Gomitas</a></li>
-                    <li><a href="#">Paletas</a></li>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-        </aside>
+        </header>
 
-        <main>
-            <section class="catalogo">
-                <article>
-                    <img src="https://images.pexels.com/photos/65882/chocolate-dark-coffee-confiserie-65882.jpeg" alt="Chocolates">
-                    <h2>Producto 1</h2>
-                    <p>Descripción del producto uno.</p>
-                    <span class="precio">$10.00</span>
-                    <button class="btn-comprar">Comprar</button>
-                </article>
+        <div class="main-wrapper">
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="#">Chocolates</a></li>
+                        <li><a href="#">Caramelos</a></li>
+                        <li><a href="#">Gomitas</a></li>
+                        <li><a href="#">Paletas</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
-                <article>
-                    <img src="https://images.pexels.com/photos/1906435/pexels-photo-1906435.jpeg" alt="Gomitas de colores">
-                    <h2>Producto 2</h2>
-                    <p>Descripción del producto dos.</p>
-                    <span class="precio">$20.00</span>
-                    <button class="btn-comprar">Comprar</button>
-                </article>
+            <main>
+                <section class="catalogo">
+                    <!-- Producto 1 -->
+                    <article class="card">
+                        <img src="imagenes/producto1.jpg" alt="Chocolates">
+                        <div class="card_body">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto uno.</p>
+                        </div>
+                        <span class="precio">$10.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                    </article>
 
-                <article>
-                    <img src="https://images.pexels.com/photos/709841/pexels-photo-709841.jpeg" alt="Paleta de dulce artesanal">
-                    <h2>Producto 3</h2>
-                    <p>Descripción del producto tres.</p>
-                    <span class="precio">$30.00</span>
-                    <button class="btn-comprar">Comprar</button>
-                </article>
+                    <!-- Producto 2 -->
+                    <article class="card">
+                        <img src="imagenes/producto2.jpg" alt="Gomitas de colores">
+                        <div class="card_body">
+                            <h2>Producto 2</h2>
+                            <p>Descripción del producto dos.</p>
+                        </div>
+                        <span class="precio">$20.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                    </article>
 
-                <article>
-                    <img src="https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg" alt="Paleta artesanal dulce">
-                    <h2>Producto 4</h2>
-                    <p>Descripción del producto cuatro.</p>
-                    <span class="precio">$15.00</span>
-                    <button class="btn-comprar">Comprar</button>
-                </article>
+                    <!-- Producto 3 -->
+                    <article class="card">
+                        <img src="imagenes/producto3.jpg" alt="Paleta de dulce artesanal">
+                        <div class="card_body">
+                            <h2>Producto 3</h2>
+                            <p>Descripción del producto tres.</p>
+                        </div>
+                        <span class="precio">$15.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                    </article>
 
-                <article>
-                    <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400" alt="Ositos de goma">
-                    <h2>Producto 5</h2>
-                    <p>Descripción del producto cinco.</p>
-                    <span class="precio">$25.00</span>
-                    <button class="btn-comprar">Comprar</button>
-                </article>
+                    <!-- Producto 4 -->
+                    <article class="card">
+                        <img src="imagenes/producto4.jpg" alt="Paleta artesanal dulce">
+                        <div class="card_body">
+                            <h2>Producto 4</h2>
+                            <p>Descripción del producto cuatro.</p>
+                        </div>
+                        <span class="precio">$18.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                    </article>
 
-                <article>
-                    <img src="https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg" alt="Dulces artesanales">
-                    <h2>Producto 6</h2>
-                    <p>Descripción del producto seis.</p>
-                    <span class="precio">$18.00</span>
-                    <button class="btn-comprar">Comprar</button>
-                </article>
-            </section>
-        </main>
+                    <!-- Producto 5 -->
+                    <article class="card">
+                        <img src="imagenes/producto5.jpg" alt="Ositos de goma">
+                        <div class="card_body">
+                            <h2>Producto 5</h2>
+                            <p>Descripción del producto cinco.</p>
+                        </div>
+                        <span class="precio">$12.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                    </article>
+
+                    <!-- Producto 6 -->
+                    <article class="card">
+                        <img src="imagenes/producto6.jpg" alt="Dulces artesanales">
+                        <div class="card_body">
+                            <h2>Producto 6</h2>
+                            <p>Descripción del producto seis.</p>
+                        </div>
+                        <span class="precio">$25.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                    </article>
+                </section>
+            </main>
+        </div>
     </div>
-
 </body>
 </html>

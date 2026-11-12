@@ -1,4 +1,7 @@
 .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../image_2c232b.jpg");
   background-size: cover;
   background-position: center;

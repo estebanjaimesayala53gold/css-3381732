@@ -1,1 +1,14 @@
-/* Módulo de pie de página */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer a {
+  color: #94a3b8;
+  text-decoration: none;
+}

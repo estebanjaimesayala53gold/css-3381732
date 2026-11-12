@@ -1,4 +1,7 @@
-article {
+article.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   background-color: var(--color-tarjeta);
   border: 1px solid #e2e8f0;
@@ -9,7 +12,7 @@ article {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-article img {
+article.card img {
   width: 100%;
   height: 140px;
   object-fit: cover;
@@ -18,32 +21,51 @@ article img {
   margin-bottom: 12px;
 }
 
-article:hover {
+article.card:hover {
   background-color: #f3f4f6;
   transform: translateY(-4px);
 }
 
-article h2 {
+.card__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+article.card h2 {
   margin: 0 0 8px 0;
   font-size: 1.2rem;
   color: var(--color-principal);
 }
 
-article h2::after {
+article.card h2::after {
   content: " ¡Oferta!";
   font-size: 0.75rem;
   color: var(--color-secundario);
 }
 
-article p {
+article.card p {
   font-size: 0.9rem;
   color: #4b5563;
   margin: 0 0 10px 0;
 }
 
-.precio {
-  display: block;
-  font-weight: bold;
+.card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: bold;
   color: #111827;
+}
+
+.precio-original {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-decoration: line-through;
 }
