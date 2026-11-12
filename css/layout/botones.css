@@ -1,0 +1,18 @@
+.btn-comprar {
+  background-color: var(--color-boton);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #059669;
+}
+
+.btn-comprar:active {
+  transform: translateY(2px);
+}
